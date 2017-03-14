@@ -80,5 +80,10 @@ library(cluster)
 clusplot(pam(df,3))
 
 
-
 #clusplot( ... )
+library(flexclust)
+ct.km <- table(wine$Type, fit.km$cluster)
+ct.km
+
+
+randIndex(ct.km)
